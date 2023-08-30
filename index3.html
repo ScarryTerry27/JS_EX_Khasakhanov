@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .one {
+        width: 200px;
+        height: 200px;
+        border: 1px solid black;
+        background-image: url(img/check-js-perem.jpg);
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+      button {
+        background-color: teal;
+        color: white;
+      }
+      .not_display {
+        display: none;
+      }
+      .two {
+        position: absolute;
+        left: 500px;
+        top: 500px;
+        width: 200px;
+        height: 200px;
+        background-color: indigo;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="one">
+      <button id="btn_one" data-target="Что-то" data-price="Цена такая то">
+        подробнее
+      </button>
+    </div>
+    <div class="two not_display">
+      <p>Купи сейчас, я все прощу</p>
+      <div>
+        <button id="buy">Купить</button>
+        <button onclick="show()">Закрыть</button>
+      </div>
+    </div>
+    <script src="js/scripts3.js"></script>
+  </body>
+</html>
